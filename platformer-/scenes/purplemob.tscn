@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://qvoxay61rfrm"]
+
+[ext_resource type="Script" uid="uid://pjxm3c8p03yt" path="res://scripts/purplemob.gd" id="1_25da4"]
+[ext_resource type="Texture2D" uid="uid://1rqy3ygswmdd" path="res://assets/images/Purplemob/Pink_Monster_Run_6.png" id="1_jnhib"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25da4"]
+atlas = ExtResource("1_jnhib")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8aeq"]
+atlas = ExtResource("1_jnhib")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ut6tv"]
+atlas = ExtResource("1_jnhib")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ypyt7"]
+atlas = ExtResource("1_jnhib")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mm6qx"]
+atlas = ExtResource("1_jnhib")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjb7i"]
+atlas = ExtResource("1_jnhib")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fvyqk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25da4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8aeq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ut6tv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ypyt7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mm6qx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yjb7i")
+}],
+"loop": true,
+"name": &"running",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8jqfx"]
+size = Vector2(17, 25)
+
+[node name="Purplemob" type="Area2D" unique_id=43488156]
+script = ExtResource("1_25da4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1028866510]
+texture_filter = 1
+scale = Vector2(1.1, 1.1)
+sprite_frames = SubResource("SpriteFrames_fvyqk")
+animation = &"running"
+autoplay = "running"
+frame_progress = 0.5869615
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=853015517]
+position = Vector2(1.5, 2.5)
+shape = SubResource("RectangleShape2D_8jqfx")
+
+[node name="Timer" type="Timer" parent="." unique_id=1208403002]
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
