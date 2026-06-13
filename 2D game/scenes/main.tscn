@@ -16,6 +16,7 @@ corner_radius_bottom_left = 5
 shadow_size = 5
 
 [node name="Main" type="Node2D" unique_id=738208503]
+position = Vector2(1, -1)
 script = ExtResource("1_0wfyh")
 
 [node name="LevelRoot" parent="." unique_id=1677285365 instance=ExtResource("2_0wfyh")]
@@ -49,3 +50,12 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
 text = "SCORE: 0"
+
+[node name="Fade" type="ColorRect" parent="HUD" unique_id=723007604]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
