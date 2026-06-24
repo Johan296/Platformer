@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://jngd0b8bsbpv"]
 
-[ext_resource type="Texture2D" uid="uid://clf258ddrlqah" path="res://assets/images/Background/orig.png" id="1_1seuy"]
+[ext_resource type="Texture2D" uid="uid://cqqr3rdjgxilv" path="res://assets/images/Background/Image.png" id="1_1seuy"]
 [ext_resource type="Texture2D" uid="uid://ctw5som06udmi" path="res://assets/images/Tilemap/Terrain (16x16).png" id="1_ksju7"]
 [ext_resource type="PackedScene" uid="uid://pbmoqjvodepq" path="res://scenes/player.tscn" id="2_6iamk"]
 [ext_resource type="PackedScene" uid="uid://qvoxay61rfrm" path="res://scenes/purplemob.tscn" id="4_x42e6"]
@@ -258,9 +258,9 @@ scale = Vector2(3, 3)
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=53914652]
 texture_filter = 1
-offset_left = 6.000061
-offset_top = 2.666667
-offset_right = 428.33334
+offset_left = 3.333332
+offset_top = 3.0000076
+offset_right = 430.0
 offset_bottom = 235.33334
 size_flags_horizontal = 0
 texture = ExtResource("1_1seuy")

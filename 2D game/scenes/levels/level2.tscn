@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://dugv1i5ou5f0i"]
 
-[ext_resource type="Texture2D" uid="uid://clf258ddrlqah" path="res://assets/images/Background/orig.png" id="1_ok6xr"]
+[ext_resource type="Texture2D" uid="uid://cqqr3rdjgxilv" path="res://assets/images/Background/Image.png" id="1_ok6xr"]
 [ext_resource type="Texture2D" uid="uid://ctw5som06udmi" path="res://assets/images/Tilemap/Terrain (16x16).png" id="2_ibugp"]
 [ext_resource type="PackedScene" uid="uid://pbmoqjvodepq" path="res://scenes/player.tscn" id="3_8qukl"]
 [ext_resource type="PackedScene" uid="uid://qvoxay61rfrm" path="res://scenes/purplemob.tscn" id="4_3p04p"]

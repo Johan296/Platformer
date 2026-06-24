@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://b63c3sf7b1kok"]
 
-[ext_resource type="Texture2D" uid="uid://clf258ddrlqah" path="res://assets/images/Background/orig.png" id="1_ftfob"]
+[ext_resource type="Texture2D" uid="uid://cqqr3rdjgxilv" path="res://assets/images/Background/Image.png" id="1_f7rt6"]
 [ext_resource type="Texture2D" uid="uid://ctw5som06udmi" path="res://assets/images/Tilemap/Terrain (16x16).png" id="2_fkk1g"]
 [ext_resource type="PackedScene" uid="uid://pbmoqjvodepq" path="res://scenes/player.tscn" id="3_ugcn1"]
 [ext_resource type="PackedScene" uid="uid://qvoxay61rfrm" path="res://scenes/purplemob.tscn" id="4_pimnq"]
@@ -263,7 +263,7 @@ offset_left = 7.0
 offset_top = 2.666668
 offset_right = 427.33334
 offset_bottom = 234.33334
-texture = ExtResource("1_ftfob")
+texture = ExtResource("1_f7rt6")
 expand_mode = 2
 stretch_mode = 1
 

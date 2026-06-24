@@ -32,14 +32,19 @@ func _load_level(level_number: int, first_load: bool, reset_score: bool) -> void
 		
 	# Change level
 	var level_path = "res://scenes/levels/level%s.tscn" % level_number
+
+	if not ResourceLoader.exists(level_path):
+		push_error("Level does not exist: " + level_path)
+		return
+
 	current_level_root = load(level_path).instantiate()
 	add_child(current_level_root)
-	current_level_root.name  = "LevelRoot"
+	current_level_root.name = "LevelRoot"
 	_setup_level(current_level_root)
+
 	
 	# Fade in
 	await _fade(0.0)
-
 
 
 func _setup_level(level_root: Node) -> void:
