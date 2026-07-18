@@ -232,8 +232,8 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qlg0r"]
-height = 24.666666
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlg0r"]
+size = Vector2(12.482846, 20)
 
 [node name="Player" type="CharacterBody2D" unique_id=1901743517]
 script = ExtResource("1_dqkch")
@@ -247,8 +247,9 @@ animation = &"dying"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=82166501]
-position = Vector2(0, 3.666667)
-scale = Vector2(-0.64087945, 0.99540555)
-shape = SubResource("CapsuleShape2D_qlg0r")
+position = Vector2(1.1920929e-07, 4.6666675)
+rotation = -3.1415925
+scale = Vector2(0.64087945, -0.99540555)
+shape = SubResource("RectangleShape2D_qlg0r")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_animation_finished"]

@@ -42,7 +42,7 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -220.5
-offset_top = -165.25
+offset_top = -123.0
 offset_right = 220.5
 offset_bottom = 229.25
 grow_horizontal = 2
@@ -59,17 +59,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_rhts7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_rhts7")
 text = "Start game"
-
-[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1641805991]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.3759428, 0.4093675, 0.3008632, 1)
-theme_override_fonts/font = ExtResource("3_8ln24")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_rhts7")
-theme_override_styles/hover = SubResource("StyleBoxFlat_rhts7")
-text = "Option"
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=1352549388]
 layout_mode = 2
